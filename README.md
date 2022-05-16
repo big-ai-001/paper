@@ -21,3 +21,8 @@
 [A Critique and Improvement of an Evaluation Metric for Text Segmentation(TC量化)](https://aclanthology.org/J02-1002.pdf)
 
 [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks(emb)](https://arxiv.org/pdf/1908.10084.pdf) ([中文筆記](https://zhuanlan.zhihu.com/p/113133510))
+
+## 詩詞生成方法探討 ref paper list
+
+[Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models
+](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)

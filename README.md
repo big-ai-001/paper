@@ -16,9 +16,15 @@
 
 ## 影片段落邊界辨識與段落描述生成探討 ref paper list
 
->核心論文  
-[Unsupervised Topic Segmentation of Meetings with BERT Embeddings](https://arxiv.org/pdf/2106.12978.pdf)  
----
+[TC簡介(不引用)](https://www.assemblyai.com/blog/text-segmentation-approaches-datasets-and-evaluation-metrics/)
 
->其他  
-[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks](https://arxiv.org/pdf/1908.10084.pdf) ([中文筆記](https://zhuanlan.zhihu.com/p/113133510))  
+[Unsupervised Topic Segmentation of Meetings with BERT Embeddings(TC模板)](https://arxiv.org/pdf/2106.12978.pdf)
+
+[A Critique and Improvement of an Evaluation Metric for Text Segmentation(TC量化)](https://aclanthology.org/J02-1002.pdf)
+
+[Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks(emb)](https://arxiv.org/pdf/1908.10084.pdf) ([中文筆記](https://zhuanlan.zhihu.com/p/113133510))
+
+## 詩詞生成方法探討 ref paper list
+
+[Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models
+](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)

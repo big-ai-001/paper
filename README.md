@@ -2,6 +2,8 @@
 
 論文相關
 
+## **警告:此為main分支，請不要更改README.md以外的內容，請將更動上傳至unverified分支**
+
 ## [endnote](http://140-125-246-135-8080.libdb.yuntech.edu.tw:3000/endnote/selectdb.jsp?id=1&sta=%A8%E4%A5%A6)
 
 使用單一帳號登入

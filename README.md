@@ -30,5 +30,3 @@
 
 [Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models
 ](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)
-
-[Structural Text Segmentation of Legal Documents](https://arxiv.org/pdf/2012.03619.pdf)

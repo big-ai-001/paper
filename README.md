@@ -24,7 +24,7 @@
 
 [Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks(emb)](https://arxiv.org/pdf/1908.10084.pdf) ([中文筆記](https://zhuanlan.zhihu.com/p/113133510))
 
-[**Structural Text Segmentation of Legal Documents**](https://arxiv.org/abs/2012.03619)
+[**Structural Text Segmentation of Legal Documents**(Sentence-BERT And Supervised)](https://arxiv.org/abs/2012.03619)
 
 ## 詩詞生成方法探討 ref paper list
 

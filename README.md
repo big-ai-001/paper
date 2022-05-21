@@ -26,6 +26,8 @@
 
 [**Structural Text Segmentation of Legal Documents**(Sentence-BERT And Supervised)](https://arxiv.org/abs/2012.03619)
 
+[Whitening Sentence Representations for Better Semantics and Faster Retrieval(Use [PCA](https://leemeng.tw/essence-of-principal-component-analysis.html))](https://arxiv.org/pdf/2103.15316.pdf)
+
 ## 詩詞生成方法探討 ref paper list
 
 [Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models

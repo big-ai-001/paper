@@ -30,5 +30,6 @@
 
 ## 詩詞生成方法探討 ref paper list
 
-[Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models
-](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)
+[Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)
+
+[https://arxiv.org/abs/2202.10447](https://arxiv.org/abs/2202.10447)

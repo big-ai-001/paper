@@ -32,4 +32,4 @@
 
 [Acrostic Generating System: An Application of Control Signals on Sequence-to-Sequence Models](https://tdr.lib.ntu.edu.tw/bitstream/123456789/683/1/ntu-108-1.pdf)
 
-[https://arxiv.org/abs/2202.10447](https://arxiv.org/abs/2202.10447)
+[Transformer Quality in Linear Time](https://arxiv.org/abs/2202.10447)

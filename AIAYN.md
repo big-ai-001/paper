@@ -1,4 +1,4 @@
-# Attention Is All You Need
+# [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
 ## 動機[1]
 
@@ -30,21 +30,28 @@ RNN(LSTM、GRU)在當時2017年，是建構先進效能序列模型(NLP：翻譯
 
 ### self-attention
 
+x=embadding(x)
+k,q,v=dense(x),dense(x),dense(x)
+tmp=點積(q,k)/序列長度^0.5
+atten=softmax(tmp)
+output=點積(atten,v)
+
 *計算複雜度
 *可並行化
 *長距離依賴
 
 ### why scale
 
-softmax
+<!-- softmax -->
+因softmax介於0到1之間，滿足sigmoid圖形，從sigmoid微分公式得出，當sigmoid(x=unlimit)，其微分值極小，導致梯度消失，所以論文提出將K、Q點積得出之向量除dim(K.shape)開根號，以解決此問題。
 
 ### why  Multi-Head
 
-投影單空間VS投影多空間(更大的representation space)
+投影單空間VS投影多空間(更大的向量表達空間)，
 
 ### Position
 
-why need Position
+雖然使用self-attention代替RNN解決了平行化運算的問題，但是self-attention從機制上並沒有時間序列概念，而語言有著強大的時間序列概念，同一個句子用不同的方法排序有可能會有完全不一樣的意思，所以論文使用在原本的embadding中加入位置編碼，以表達該句的時間序列概念，而論文中使用三角函數表達，其假設位置相近的字詞應在空間上要有較近的距離。但在實際應用中此方法較少見。
 
 ## 結果[1]
 

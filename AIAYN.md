@@ -1,5 +1,6 @@
 # [Attention Is All You Need](https://arxiv.org/pdf/1706.03762.pdf)
 
+[](https://leemeng.tw/neural-machine-translation-with-transformer-and-tensorflow2.html)
 ## 動機[1]
 
 RNN(LSTM、GRU)在當時2017年，是建構先進效能序列模型(NLP：翻譯、分類、QA、摘要)的主要方法，RNN並行問題拖慢速度。
@@ -31,10 +32,13 @@ RNN(LSTM、GRU)在當時2017年，是建構先進效能序列模型(NLP：翻譯
 ### self-attention
 
 x=embadding(x)
+dense.dim(D_model)
 k,q,v=dense(x),dense(x),dense(x)
 tmp=點積(q,k)/序列長度^0.5
 atten=softmax(tmp)
 output=點積(atten,v)
+
+為什麼不用Additive:tanh收斂比softmax慢，還要額外學一個larey。
 
 *計算複雜度
 *可並行化

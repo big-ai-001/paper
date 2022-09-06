@@ -48,4 +48,4 @@ Top-p Sampling ,Top-k Sampling: 克服文本退化，batter than beam-search，�
 2. 對每個樣本token計算和輸入主題(標題、關鍵字)的相似度(BERT Sentence embedding 算餘弦相似度(夾角))，接受最大值樣本token。
 3. 將此token送model，decode出剩餘token。
 
-## 
+##  Demonstration and Evaluation

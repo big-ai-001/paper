@@ -1,4 +1,4 @@
-# Lingxi: A Diversity-aware Chinese Modern Poetry Generation System
+# [Lingxi: A Diversity-aware Chinese Modern Poetry Generation System](https://arxiv.org/pdf/2108.12108.pdf)
 
 ## 摘要
 

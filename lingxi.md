@@ -34,9 +34,9 @@ Nucleus Sampling(Top-p Sampling): 使用隨機抽樣(stochastic sampling)取代b
 
 ### Controllable Diversity by Permutating  the “Head” of Predicted Distribution(通過置換預測分佈的“頭部(高頻)”來控制多樣性)
 
-Top-p Sampling ,Top-k Sampling: 克服文本退化，batter than beam-search，但在PGT無效。
+Top-p Sampling ,Top-k Sampling: 克服文本退化，better than beam-search，但在PGT無效。
 
-解法: 先取一次Top-p Sampling，取head的過閥值的部分(最大機率/n)然後重新分配機率密度，head外的在做一次Top-p Sampling取head，在這個新的分布隨機抽樣。
+解法: 先取一次Top-p Sampling(q)，取head的過閥值的部分(最大機率/n)然後重新分配機率密度，head外的在做一次Top-p Sampling(q)取head，在這個新的分布隨機抽樣。
 
 ### Semantic-similarity-based Rejection  Sampling Algorithm(基於語義相似性的拒絕採樣算法)
 
@@ -49,3 +49,25 @@ Top-p Sampling ,Top-k Sampling: 克服文本退化，batter than beam-search，�
 3. 將此token送model，decode出剩餘token。
 
 ##  Demonstration and Evaluation
+
+### evaluation paradigm
+
+PPL(Perplexity, 混淆度): 生成樣本的總體流暢度（分數越低表示流暢度越高，但越無聊）
+
+Self-BLEU: 不同樣本之間的多樣性(分數越低表示多樣性越高)
+
+Zipf: 反映詞頻分佈特徵(分數越低表示詞頻分佈越平坦，多樣性越高)
+
+Repetition entropy: 分數越高表示重複越少，多樣性越高， $\mathbb{E} \left \{ - \log_{}{p\left ( x \right ) }  \right \} $，$p\left ( x \right )$為生成樣本中的詞頻分佈
+
+Rhyming entropy: 分數越高表示多樣性越高，但押韻越少，$\mathbb{E} \left \{ - \log_{}{p_{rhyme}\left ( x \right ) }  \right \}$，$p_{rhyme}\left ( x \right )$為生成樣本中的押韻頻率分佈
+
+line length: 生成樣本中每行詩出現的單詞平均數，越高分代表這首詩越長，且使用更豐富的詞彙
+
+![Lingxi_fig1](./image/Lingxi_fig1.png)
+
+### evaluation
+
+PPL: 傳統隨機採樣方法生成的樣本嚴重退化，因為它們的PPL（NS，p = 0.70 或 0.90 和 top-k，k = 200）遠低於人類，更高的PPL可能被認為是詩意的，當 p = 1.00 時才能達到接近人類指標的最大 PPL，在此狀態下模型會無條件考慮低機率詞，破壞詩的結構。相比之下，NS-RH的PPL到達人類水平，有條件考慮低機率詞，不會破壞詩的結構。輸出Robustness可透過p、q調整
+
+

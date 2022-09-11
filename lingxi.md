@@ -60,7 +60,7 @@ Self-BLEU: 不同樣本之間的多樣性(分數越低表示多樣性越高)
 
 Zipf: 反映詞頻分佈特徵(分數越低表示詞頻分佈越平坦，多樣性越高)
 
-Repetition entropy: 分數越高表示重複越少，多樣性越高，$\mathbb{E} \left \{ - \log_{}{p\left ( x \right ) }  \right \} $，p為生成樣本中的詞頻分佈
+Repetition entropy: 分數越高表示重複越少，多樣性越高，$\mathbb{E} \left \{ - \log_{}{p\left ( x \right ) }  \right \} $，p為生成樣本中的詞頻分佈 ![Lingxi_fig1](./image/EntropyOfp.png)
 
 Rhyming entropy: 分數越高表示多樣性越高，但押韻越少，$\mathbb{E} \left \{ - \log_{}{p_{rhyme}\left ( x \right ) }  \right \}$，p為生成樣本中的押韻頻率分佈
 
